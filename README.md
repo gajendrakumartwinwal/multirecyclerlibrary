@@ -1,8 +1,8 @@
 # multirecyclerlibrary
 
 How to use library is:
-1. initialize the recyclerview which is default intiliztion as provided in Android Recycler library
-   <h1>To support multiple collumn provide total number of collumns by replacing <total number of collumn> and enable by setting it true      isGridEnable = true</h1>
+<h2>1. initialize the recyclerview which is default intiliztion as provided in Android Recycler library</h2>
+   <h3>To support multiple collumn provide total number of collumns by replacing <total number of collumn> and enable by setting it true      isGridEnable = true</h3>
    
     protected void initRecyclerView(){
         mRecyclerView.addItemDecoration(new SpacesItemDecoration(1));
@@ -22,7 +22,7 @@ How to use library is:
         mRecyclerView.setLayoutManager(manager);
     }
        
-2. Setting adpter by just providing Array of RecycleAdapterParam items where RecycleAdapterParam is:
+<h2>2. Setting adpter by just providing Array of RecycleAdapterParam items where RecycleAdapterParam is:</h2>
         ArrayList<RecycleAdapterParam> adapterParams = new ArrayList<>();
         RecycleAdapterParam recycleAdapterParam = new RecycleAdapterParam(mContext, items, VideoItemBinder.class);
         adapterParams.add(recycleAdapterParam);
